@@ -32,6 +32,7 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNuevoIngreso));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.BtnProveedor = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -47,6 +48,7 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -57,11 +59,10 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.label23 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.BtnProducto = new System.Windows.Forms.Button();
-            this.BtnOrdenGuia = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -75,41 +76,27 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Referencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CostoPromedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SaldoPromedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FVencimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CostoPromedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SaldoPromedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descuento2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FVencimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -128,6 +115,7 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox14);
             this.groupBox1.Controls.Add(this.BtnProveedor);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.comboBox4);
@@ -142,12 +130,21 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.cboGrupoSanguineo);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(11, 37);
+            this.groupBox1.Location = new System.Drawing.Point(9, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(592, 193);
+            this.groupBox1.Size = new System.Drawing.Size(769, 193);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Comprobante";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.ForeColor = System.Drawing.Color.Black;
+            this.textBox14.Location = new System.Drawing.Point(225, 80);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(87, 20);
+            this.textBox14.TabIndex = 67;
             // 
             // BtnProveedor
             // 
@@ -270,7 +267,7 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.textBox2.ForeColor = System.Drawing.Color.Black;
             this.textBox2.Location = new System.Drawing.Point(167, 80);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(145, 20);
+            this.textBox2.Size = new System.Drawing.Size(54, 20);
             this.textBox2.TabIndex = 42;
             // 
             // cboGrupoSanguineo
@@ -310,27 +307,42 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.groupBox4);
-            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.BtnProducto);
-            this.panel1.Controls.Add(this.BtnOrdenGuia);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox6);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1034, 724);
+            this.panel1.Size = new System.Drawing.Size(1160, 724);
             this.panel1.TabIndex = 39;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(609, 690);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 26);
+            this.button1.TabIndex = 66;
+            this.button1.Text = "     Anular";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // groupBox4
             // 
@@ -344,7 +356,7 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.groupBox4.Controls.Add(this.label23);
             this.groupBox4.Controls.Add(this.textBox12);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(516, 561);
+            this.groupBox4.Location = new System.Drawing.Point(897, 561);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(250, 123);
             this.groupBox4.TabIndex = 59;
@@ -453,28 +465,6 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Gray;
-            this.label17.Location = new System.Drawing.Point(226, 243);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(116, 13);
-            this.label17.TabIndex = 62;
-            this.label17.Text = "Agregar Medicamentos";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Gray;
-            this.label16.Location = new System.Drawing.Point(44, 243);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(144, 13);
-            this.label16.TabIndex = 61;
-            this.label16.Text = "Aplicar Orden Compra ó Guia";
-            // 
             // BtnProducto
             // 
             this.BtnProducto.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -482,34 +472,17 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.BtnProducto.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.BtnProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnProducto.ForeColor = System.Drawing.Color.Black;
+            this.BtnProducto.ForeColor = System.Drawing.Color.Gray;
             this.BtnProducto.Image = ((System.Drawing.Image)(resources.GetObject("BtnProducto.Image")));
             this.BtnProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnProducto.Location = new System.Drawing.Point(197, 236);
+            this.BtnProducto.Location = new System.Drawing.Point(10, 233);
             this.BtnProducto.Name = "BtnProducto";
-            this.BtnProducto.Size = new System.Drawing.Size(26, 26);
+            this.BtnProducto.Size = new System.Drawing.Size(135, 26);
             this.BtnProducto.TabIndex = 59;
+            this.BtnProducto.Text = "  Agregar Producto";
             this.BtnProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnProducto.UseVisualStyleBackColor = false;
             this.BtnProducto.Click += new System.EventHandler(this.BtnProducto_Click);
-            // 
-            // BtnOrdenGuia
-            // 
-            this.BtnOrdenGuia.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnOrdenGuia.Cursor = System.Windows.Forms.Cursors.Default;
-            this.BtnOrdenGuia.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.BtnOrdenGuia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnOrdenGuia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnOrdenGuia.ForeColor = System.Drawing.Color.Black;
-            this.BtnOrdenGuia.Image = ((System.Drawing.Image)(resources.GetObject("BtnOrdenGuia.Image")));
-            this.BtnOrdenGuia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnOrdenGuia.Location = new System.Drawing.Point(11, 236);
-            this.BtnOrdenGuia.Name = "BtnOrdenGuia";
-            this.BtnOrdenGuia.Size = new System.Drawing.Size(30, 26);
-            this.BtnOrdenGuia.TabIndex = 57;
-            this.BtnOrdenGuia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnOrdenGuia.UseVisualStyleBackColor = false;
-            this.BtnOrdenGuia.Click += new System.EventHandler(this.BtnOrdenGuia_Click);
             // 
             // groupBox2
             // 
@@ -526,12 +499,33 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.groupBox2.Controls.Add(this.dateTimePicker2);
             this.groupBox2.Controls.Add(this.comboBox5);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(609, 38);
+            this.groupBox2.Location = new System.Drawing.Point(784, 35);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(413, 192);
+            this.groupBox2.Size = new System.Drawing.Size(362, 192);
             this.groupBox2.TabIndex = 56;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Otros Datos";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Gray;
+            this.label24.Location = new System.Drawing.Point(253, 27);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(33, 13);
+            this.label24.TabIndex = 69;
+            this.label24.Text = "Días ";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.ForeColor = System.Drawing.Color.Black;
+            this.textBox13.Location = new System.Drawing.Point(256, 42);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(63, 20);
+            this.textBox13.TabIndex = 68;
             // 
             // label15
             // 
@@ -681,195 +675,20 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.Referencia,
             this.Codigo,
             this.Descripcion,
-            this.Stock,
             this.CostoPromedio,
             this.SaldoPromedio,
             this.Descuento,
+            this.Descuento2,
             this.SubTotal,
             this.Lote,
-            this.FVencimiento,
-            this.Eliminar});
+            this.FVencimiento});
             this.dataGridView1.Location = new System.Drawing.Point(11, 268);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1011, 287);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(1136, 287);
             this.dataGridView1.TabIndex = 48;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            // 
-            // Referencia
-            // 
-            this.Referencia.HeaderText = "Referencia";
-            this.Referencia.Name = "Referencia";
-            this.Referencia.Width = 65;
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Descripción Producto";
-            this.Codigo.Name = "Codigo";
-            this.Codigo.Width = 250;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Laboratorio";
-            this.Descripcion.Name = "Descripcion";
-            // 
-            // Stock
-            // 
-            this.Stock.HeaderText = "Fraccion";
-            this.Stock.Name = "Stock";
-            this.Stock.Width = 50;
-            // 
-            // CostoPromedio
-            // 
-            this.CostoPromedio.HeaderText = "Precio Costo";
-            this.CostoPromedio.Name = "CostoPromedio";
-            this.CostoPromedio.Width = 75;
-            // 
-            // SaldoPromedio
-            // 
-            this.SaldoPromedio.HeaderText = "Cantidad";
-            this.SaldoPromedio.Name = "SaldoPromedio";
-            this.SaldoPromedio.Width = 70;
-            // 
-            // Descuento
-            // 
-            this.Descuento.HeaderText = "Descuento";
-            this.Descuento.Name = "Descuento";
-            this.Descuento.Width = 70;
-            // 
-            // SubTotal
-            // 
-            this.SubTotal.HeaderText = "SubTotal";
-            this.SubTotal.Name = "SubTotal";
-            this.SubTotal.Width = 80;
-            // 
-            // Lote
-            // 
-            this.Lote.HeaderText = "Lote";
-            this.Lote.Name = "Lote";
-            this.Lote.Width = 50;
-            // 
-            // FVencimiento
-            // 
-            this.FVencimiento.HeaderText = "FVencimiento";
-            this.FVencimiento.Name = "FVencimiento";
-            this.FVencimiento.Width = 80;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Width = 50;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.textBox6);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.textBox4);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(772, 561);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(250, 123);
-            this.groupBox3.TabIndex = 47;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Total Rectificado";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(106, 96);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 13);
-            this.label8.TabIndex = 58;
-            this.label8.Text = "Total";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(87, 70);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
-            this.label7.TabIndex = 57;
-            this.label7.Text = "Impuesto";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(63, 44);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 13);
-            this.label6.TabIndex = 56;
-            this.label6.Text = "Valor Gravado";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(143, 93);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(101, 20);
-            this.textBox6.TabIndex = 55;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(143, 67);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(101, 20);
-            this.textBox5.TabIndex = 54;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(143, 41);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(101, 20);
-            this.textBox4.TabIndex = 53;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(46, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 13);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "Valor No Gravado";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(143, 15);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(101, 20);
-            this.textBox3.TabIndex = 52;
             // 
             // panel2
             // 
@@ -878,7 +697,7 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1083, 27);
+            this.panel2.Size = new System.Drawing.Size(1159, 27);
             this.panel2.TabIndex = 41;
             // 
             // pictureBox1
@@ -904,61 +723,116 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.label2.TabIndex = 43;
             this.label2.Text = "Ingresos";
             // 
-            // button1
+            // button2
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(609, 690);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 26);
-            this.button1.TabIndex = 66;
-            this.button1.Text = "     Anular";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Gray;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(151, 233);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 26);
+            this.button2.TabIndex = 68;
+            this.button2.Text = "  Quitar Producto";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // label11
+            // button4
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(931, 241);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(86, 18);
-            this.label11.TabIndex = 67;
-            this.label11.Text = "ANULADO";
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Gray;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(1032, 233);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(115, 26);
+            this.button4.TabIndex = 69;
+            this.button4.Text = "  Modifica Precio";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
             // 
-            // label24
+            // Id
             // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Gray;
-            this.label24.Location = new System.Drawing.Point(253, 27);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(33, 13);
-            this.label24.TabIndex = 69;
-            this.label24.Text = "Días ";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
             // 
-            // textBox13
+            // Codigo
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.ForeColor = System.Drawing.Color.Black;
-            this.textBox13.Location = new System.Drawing.Point(256, 42);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(63, 20);
-            this.textBox13.TabIndex = 68;
+            this.Codigo.HeaderText = "Descripción Producto";
+            this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
+            this.Codigo.Width = 350;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Laboratorio";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Width = 180;
+            // 
+            // CostoPromedio
+            // 
+            this.CostoPromedio.HeaderText = "Precio Unitario";
+            this.CostoPromedio.Name = "CostoPromedio";
+            this.CostoPromedio.ReadOnly = true;
+            this.CostoPromedio.Width = 75;
+            // 
+            // SaldoPromedio
+            // 
+            this.SaldoPromedio.HeaderText = "Cantidad";
+            this.SaldoPromedio.Name = "SaldoPromedio";
+            this.SaldoPromedio.ReadOnly = true;
+            this.SaldoPromedio.Width = 70;
+            // 
+            // Descuento
+            // 
+            this.Descuento.HeaderText = "% Dscto 1";
+            this.Descuento.Name = "Descuento";
+            this.Descuento.ReadOnly = true;
+            this.Descuento.Width = 80;
+            // 
+            // Descuento2
+            // 
+            this.Descuento2.HeaderText = "% Dscto 2";
+            this.Descuento2.Name = "Descuento2";
+            this.Descuento2.ReadOnly = true;
+            this.Descuento2.Width = 80;
+            // 
+            // SubTotal
+            // 
+            this.SubTotal.HeaderText = "SubTotal";
+            this.SubTotal.Name = "SubTotal";
+            this.SubTotal.ReadOnly = true;
+            // 
+            // Lote
+            // 
+            this.Lote.HeaderText = "Lote";
+            this.Lote.Name = "Lote";
+            this.Lote.ReadOnly = true;
+            this.Lote.Width = 50;
+            // 
+            // FVencimiento
+            // 
+            this.FVencimiento.HeaderText = "FVencimiento";
+            this.FVencimiento.Name = "FVencimiento";
+            this.FVencimiento.ReadOnly = true;
+            this.FVencimiento.Width = 80;
             // 
             // frmNuevoIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 724);
+            this.ClientSize = new System.Drawing.Size(1160, 724);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNuevoIngreso";
@@ -969,14 +843,11 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -996,7 +867,6 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label14;
@@ -1016,35 +886,12 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button BtnOrdenGuia;
         private System.Windows.Forms.Button BtnProducto;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Referencia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CostoPromedio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SaldoPromedio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descuento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lote;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FVencimiento;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
         private System.Windows.Forms.Button BtnProveedor;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label18;
@@ -1056,8 +903,20 @@ namespace Romsoft.GESTIONCLINICA.Presentacion.ModuloFarmacia.Ingreso
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CostoPromedio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SaldoPromedio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descuento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descuento2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lote;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FVencimiento;
     }
 }

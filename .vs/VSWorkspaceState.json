@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Romsoft.GESTIONCLINICA.Presentacion",
+    "\\Romsoft.GESTIONCLINICA.Presentacion\\ModuloFarmacia",
+    "\\Romsoft.GESTIONCLINICA.Presentacion\\ModuloFarmacia\\Producto"
   ],
+  "SelectedNode": "\\Romsoft.GESTIONCLINICA.Presentacion\\ModuloFarmacia\\Producto\\frmNuevoProducto.Designer.cs",
   "PreviewInSolutionExplorer": false
 }
